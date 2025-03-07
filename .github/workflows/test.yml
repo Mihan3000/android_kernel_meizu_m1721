@@ -6,7 +6,7 @@ on:
         LOCALVERSIONNAME:
             description: 'Kernel Local Version Name'
             required: true
-            default: '1.2' 
+            default: '2.0' 
 
 jobs:
   build-vanilla:
@@ -54,7 +54,7 @@ jobs:
 
       - name: Build Kernel
         run: |
-          export LOCALVERSION=Release-${{ github.event.inputs.LOCALVERSIONNAME }}
+          export LOCALVERSION=${{ github.event.inputs.LOCALVERSIONNAME }}
           export KBUILD_BUILD_HOST=Github-Action
           export KBUILD_BUILD_USER=$(echo ${{ github.actor }} | tr A-Z a-z)
           export ARCH="arm64"
@@ -142,7 +142,7 @@ jobs:
 
       - name: Build Kernel
         run: |
-          export LOCALVERSION=Release-${{ github.event.inputs.LOCALVERSIONNAME }}
+          export LOCALVERSION=${{ github.event.inputs.LOCALVERSIONNAME }}
           export KBUILD_BUILD_HOST=Github-Action
           export KBUILD_BUILD_USER=$(echo ${{ github.actor }} | tr A-Z a-z)
           export ARCH="arm64"
