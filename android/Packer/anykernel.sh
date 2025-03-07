@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=K-Nel M1721
+kernel.string=Freezz M1721
 do.devicecheck=1
 do.modules=0
 do.systemless=1
