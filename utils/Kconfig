@@ -1,5 +1,0 @@
-menu "Utilities"
-
-source "utils/docker/Kconfig"
-
-endmenu
