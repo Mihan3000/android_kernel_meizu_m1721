@@ -1,9 +1,9 @@
 #/usr/bin/sh
-# K-Nel A-Only Installer
-# By KeJia
+# Freezz A-Only Installer
+# By m3000
 
 ui_print " "
-ui_print "- Install K-Nel"
+ui_print "- Install Freezz"
 ui_print " "
 
 if test -z '$(grep m1721 /system/build.prop)';
