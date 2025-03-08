@@ -1,4 +1,4 @@
-name: Build Freezz M1721 (Release Versions)
+name: Build Freezz A-13 (Release Versions)
 on:
   workflow_call:
   workflow_dispatch:
