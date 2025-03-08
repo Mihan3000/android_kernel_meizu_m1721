@@ -1,4 +1,4 @@
-name: Build Freezz A-13 (Release Versions)
+name: Build Freezz A-11 (Release Versions)
 on:
   workflow_call:
   workflow_dispatch:
@@ -87,7 +87,7 @@ jobs:
         if: env.CHECK_FILE_IS_OK == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: Freezz_M1721_Release-${{ github.event.inputs.LOCALVERSIONNAME }}_A-13
+          name: Freezz_M1721_Release-${{ github.event.inputs.LOCALVERSIONNAME }}_A-11
           path: workdir/source/android/Packer/*
           
   build-ksu:
@@ -175,6 +175,6 @@ jobs:
         if: env.CHECK_FILE_IS_OK == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: Freezz_M1721_KSU_Release-${{ github.event.inputs.LOCALVERSIONNAME }}_A-13
+          name: Freezz_M1721_KSU_Release-${{ github.event.inputs.LOCALVERSIONNAME }}_A-11
           path: workdir/source/android/Packer/*
           
