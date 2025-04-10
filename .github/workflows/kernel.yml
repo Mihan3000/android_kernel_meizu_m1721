@@ -6,7 +6,7 @@ on:
         LOCALVERSIONNAME:
             description: 'Kernel Local Version Name'
             required: true
-            default: '2.0' 
+            default: '2.6' 
 
 jobs:
   build-vanilla:
